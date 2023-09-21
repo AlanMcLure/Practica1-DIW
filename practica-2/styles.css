@@ -1,0 +1,78 @@
+body {
+    background-image: url('/practica-2/assets/back.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+}
+
+.title-container {
+    background-color: rgba(50, 139, 206, 0.3);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    margin-top: 200px;
+}
+
+.item {
+    height: 225px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(73, 201, 230, 0.3);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.item img {
+    width: 80%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.item p {
+    margin: 0;
+    margin-top: auto;
+    font-size: 20px;
+}
+
+@media (max-width: 1300px) {
+    body {
+        background-position: center center;
+    }
+
+    .item {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {    
+    .container {
+        margin-top: 50px;
+        padding: 0 2%;
+        flex-direction: column;
+    }
+    .item {
+        flex: 0 0 100%;
+    }
+    .item img {
+        width: 80%;
+        max-width: 100%;
+    }
+}
