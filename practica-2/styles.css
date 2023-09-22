@@ -1,5 +1,5 @@
 body {
-    background-image: url('/practica-2/assets/back.jpeg');
+    background-image: url('assets/back.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,7 +24,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding: 0 20%;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .item {
@@ -42,6 +42,7 @@ h1 {
 .item img {
     width: 80%;
     max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
     align-self: center;
 }
@@ -50,6 +51,17 @@ h1 {
     margin: 0;
     margin-top: auto;
     font-size: 20px;
+}
+
+footer {
+    background-color: rgba(50, 139, 206, 0.3);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
 }
 
 @media (max-width: 1300px) {
@@ -74,5 +86,11 @@ h1 {
     .item img {
         width: 80%;
         max-width: 100%;
+    }
+
+    footer {
+        position: relative;
+        margin-top: auto;
+        width: auto;
     }
 }
