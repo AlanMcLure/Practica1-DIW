@@ -1,0 +1,52 @@
+/*
+Utiliza las siguientes pseudo-clases y comprueba los resultados:
+
+tr:nth-child(odd) o tr:nth-child(2n+1)Selecciona las filas impares de una tabla.
+tr:nth-child(even) o tr:nth-child(2n)Selecciona las filas pares de una tabla.
+:nth-child(7)Selecciona el séptimo elemento.
+:nth-child(6n)Selecciona los elementos 6, 12, 18, etc.
+:nth-child(3n+4)Selecciona los elementos 4, 7, 10, 13, etc.
+*/
+
+h1 {
+    text-align: center;
+    color: lightcoral;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+tr:nth-child(6n) {
+    background-color: lightcoral;
+}
+
+tr:nth-child(3n+4) {
+    background-color: lightyellow;
+}
+
+tr:nth-child(7) {
+    background-color: yellow;
+}
+
+tr:hover {
+    background-color: lightpink;
+}
