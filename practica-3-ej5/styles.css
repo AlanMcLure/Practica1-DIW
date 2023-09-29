@@ -1,52 +1,53 @@
-/*
-Utiliza las siguientes pseudo-clases y comprueba los resultados:
-
-tr:nth-child(odd) o tr:nth-child(2n+1)Selecciona las filas impares de una tabla.
-tr:nth-child(even) o tr:nth-child(2n)Selecciona las filas pares de una tabla.
-:nth-child(7)Selecciona el séptimo elemento.
-:nth-child(6n)Selecciona los elementos 6, 12, 18, etc.
-:nth-child(3n+4)Selecciona los elementos 4, 7, 10, 13, etc.
-*/
-
-h1 {
-    text-align: center;
-    color: lightcoral;
-    font-weight: bold;
-    font-size: 3em;
-}
-
-table {
+/* Estilos para la tabla */
+.tabla {
+    display: table;
+    width: 100%;
     border-collapse: collapse;
-    width: 50%;
-    margin: 20px auto;
 }
 
-th, td {
-    border: 1px solid black;
+.encabezado-tabla {
+    display: table-header-group;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.columna {
+    display: table-cell;
     padding: 8px;
+    border: 1px solid #fff;
     text-align: center;
 }
 
-tr:nth-child(odd) {
-    background-color: lightgreen;
+.cuerpo-tabla {
+    display: table-row-group;
 }
 
-tr:nth-child(even) {
-    background-color: lightblue;
+.fila-tabla {
+    display: table-row;
 }
 
-tr:nth-child(6n) {
-    background-color: lightcoral;
+.celda {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
-tr:nth-child(3n+4) {
-    background-color: lightyellow;
+.cuerpo-pie {
+    display: table-footer-group;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
 }
 
-tr:nth-child(7) {
-    background-color: yellow;
+.fila-tabla-pie {
+    display: table-row;
 }
 
-tr:hover {
-    background-color: lightpink;
+.fila-tabla:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.fila-tabla:nth-child(even) {
+    background-color: #d9d9d9;
 }
