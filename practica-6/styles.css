@@ -1,0 +1,101 @@
+body {
+    background-image: url('assets/back.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+}
+
+.title-container {
+    background-color: rgba(50, 139, 206, 0.3);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.container {
+    padding: 0; /* Elimina el padding horizontal */
+    margin-top: 150px;
+    overflow: hidden; /* Para contener elementos flotantes */
+    text-align: center; /* Centra los elementos internos */
+    margin-left: 400px;
+}
+
+.item {
+    height: 280px;
+    width: 250px; /* Ancho de cada elemento */
+    float: left; /* Hacer que los elementos floten a la izquierda */
+    margin: 10px;
+    background-color: rgba(73, 201, 230, 0.3);
+    border-radius: 25px;
+    padding: 30px; /* Reduzco el padding para que los elementos ocupen menos espacio */
+    text-align: center;
+    box-sizing: border-box; /* Incluye el padding en el ancho total del elemento */
+}
+
+.item img {
+    width: 80%; /* Haz que las imágenes se ajusten al ancho del elemento */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item p {
+    margin: 0;
+    margin-top: auto;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgba(50, 139, 206, 0.3);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px; /* Ajusta el espacio entre el contenido y el footer */
+}
+
+@media (max-width: 1300px) {
+    body {
+        background-position: center center;
+    }
+
+    .container {
+        margin-left: 200px;
+    }
+
+    .item {
+        height: 280px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin-top: 50px;
+        margin-left: 150px
+    }
+    .item {
+        width: 45%; /* Cambio el ancho al 45% para una sola columna */
+        float: none; /* Eliminar el flotado */
+        margin: 10 auto; /* Centra los elementos en la columna */
+    }
+    .item img {
+        width: 80%; /* Haz que las imágenes se ajusten al ancho del elemento */
+        max-width: 100%;
+    }
+
+    footer {
+        position: relative;
+        margin-top: auto;
+        width: auto;
+    }
+}
