@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.caja {
+    padding: 15px;
+    margin: 10px;
+    border: 5px solid black;
+    background-color: aqua;
+}
+
+.roja {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
