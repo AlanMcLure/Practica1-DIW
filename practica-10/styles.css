@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tetris {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 500px;
+    width: 500px;
+    grid-template-areas:
+        "caja1 caja2 caja2"
+        "caja1 caja2 caja2"
+        "caja3 caja3 caja4"
+        "caja5 caja5 caja5"
+        "caja6 caja7 caja8"
+        "caja6 caja7 caja8"
+        "caja9 caja9 caja9";
+}
+
+.caja1 { grid-area: caja1; }
+.caja2 { grid-area: caja2; }
+.caja3 { grid-area: caja3; }
+.caja4 { grid-area: caja4; }
+.caja5 { grid-area: caja5; }
+.caja6 { grid-area: caja6; }
+.caja7 { grid-area: caja7; }
+.caja8 { grid-area: caja8; }
+.caja9 { grid-area: caja9; }
+
+.caja1, .caja3 {
+    background-color: #FF5733;
+}
+
+.caja2, .caja4 {
+    background-color: #FFC300;
+}
+
+.caja5, .caja7 {
+    background-color: #4CAF50;
+}
+
+.caja6, .caja8 {
+    background-color: #3498DB;
+}
+
+.caja9 {
+    background-color: #9B59B6;
+}
