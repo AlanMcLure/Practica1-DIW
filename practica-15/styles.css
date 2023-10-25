@@ -1,0 +1,108 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgba(67, 67, 67, 0.991); }
+
+nav {
+  max-width: 100%;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 40px 20px; }
+
+nav h1 {
+  margin: 0;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-size: 2.5em;
+  color: black; }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em; }
+
+nav a {
+  text-decoration: none;
+  color: inherit; }
+
+nav li {
+  margin-left: 20px;
+  padding-left: 20px; }
+
+footer {
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 30px 35px;
+  color: rgba(120, 120, 120, 0.991); }
+
+.flex-container {
+  display: flex;
+  margin: 20px 20px; }
+
+.nav-izquierda {
+  width: 15%;
+  padding: 20px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column; }
+  .nav-izquierda p {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0; }
+  .nav-izquierda ul {
+    list-style: none;
+    padding: 0; }
+  .nav-izquierda li {
+    margin-bottom: 10px; }
+  .nav-izquierda button {
+    width: 100%;
+    font-size: 1.25em;
+    padding: 25px 20px;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer; }
+    .nav-izquierda button:hover {
+      background-color: #fff; }
+
+.container-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+  justify-content: center; }
+
+.card {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1.1em;
+  color: rgba(67, 67, 67, 0.991);
+  width: auto;
+  height: auto;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; }
+  .card img {
+    max-width: 100%;
+    height: auto; }
+  .card h2 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: rgba(67, 67, 67, 0.991); }
+  .card p {
+    margin: 0; }
+
+/*# sourceMappingURL=styles.css.map */
