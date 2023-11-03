@@ -9,23 +9,27 @@ $color-fondo-boton-hover-contraste: #005500;
 $color-fondo-card-contraste: #004400;
 $color-footer-contraste: #005500;
 
-// Mixin para crear los elementos de un menu (li's)
-///
+// Mixin para crear el sombreado
 @mixin sombreado {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
+// Mixin para el estilo del texto
 @mixin estilo-de-texto($tamano, $color) {
     font-size: $tamano;
     color: $color;
 }
 
+// Mixin para todos los cambios del formato contraste de color
 @mixin formatoContraste {
+    
+    // Color del body
     body {
         color: $color-texto-contraste;
         background-color: $color-fondo;
     }
     
+    // Color del nav
     nav {
         border-bottom: 1px solid $color-borde-contraste;
     
@@ -42,6 +46,7 @@ $color-footer-contraste: #005500;
         }
     }
     
+    // Color de la barra lateral
     .nav-izquierda {
         p {
             border-bottom: 1px solid $color-borde-contraste;
@@ -56,7 +61,10 @@ $color-footer-contraste: #005500;
         }
     }
     
+    // Color del contenedor principal
     .container-principal {
+
+        // Color de la card
         .card {
             @include sombreado;
             @include estilo-de-texto(1.1em, $color-texto-contraste);
@@ -70,6 +78,7 @@ $color-footer-contraste: #005500;
         }
     }
     
+    // Color del footer
     footer {
         color: $color-footer-contraste;
     }
