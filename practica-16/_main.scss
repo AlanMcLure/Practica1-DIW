@@ -1,0 +1,11 @@
+@use 'base' as elementosBase;
+
+@use 'normal' as elementosNormal;
+@use 'contraste' as elementosContraste;
+
+@include elementosBase.formatoBase;
+@include elementosContraste.formatoContraste;
+//@include elementosNormal.formatoNormal;
+
+// sass _main.scss style_normal.css
+// sass _main.scss style_contraste.css

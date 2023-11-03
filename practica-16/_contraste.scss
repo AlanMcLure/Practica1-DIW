@@ -1,0 +1,76 @@
+// Variables principales
+///
+$color-fondo: black;
+$color-texto-contraste: #00FF00;
+$color-titulo-contraste: #00FF00;
+$color-borde-contraste: #003300;
+$color-fondo-boton-contraste: #003300;
+$color-fondo-boton-hover-contraste: #005500;
+$color-fondo-card-contraste: #004400;
+$color-footer-contraste: #005500;
+
+// Mixin para crear los elementos de un menu (li's)
+///
+@mixin sombreado {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+@mixin estilo-de-texto($tamano, $color) {
+    font-size: $tamano;
+    color: $color;
+}
+
+@mixin formatoContraste {
+    body {
+        color: $color-texto-contraste;
+        background-color: $color-fondo;
+    }
+    
+    nav {
+        border-bottom: 1px solid $color-borde-contraste;
+    
+        h1 {
+            color: $color-titulo-contraste;
+        }
+
+        button {
+            background-color: $color-fondo-boton-contraste;
+
+            &:hover {
+                background-color: $color-fondo-boton-hover-contraste;
+            }
+        }
+    }
+    
+    .nav-izquierda {
+        p {
+            border-bottom: 1px solid $color-borde-contraste;
+        }
+    
+        button {
+            background-color: $color-fondo-boton-contraste;
+    
+            &:hover {
+                background-color: $color-fondo-boton-hover-contraste;
+            }
+        }
+    }
+    
+    .container-principal {
+        .card {
+            @include sombreado;
+            @include estilo-de-texto(1.1em, $color-texto-contraste);
+            border-bottom: 1px solid $color-borde-contraste;
+            border-right: 1px solid $color-borde-contraste;
+            background-color: $color-fondo-card-contraste;
+    
+            h2 {
+                color: $color-texto-contraste;
+            }
+        }
+    }
+    
+    footer {
+        color: $color-footer-contraste;
+    }
+}
