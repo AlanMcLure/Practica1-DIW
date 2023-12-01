@@ -435,52 +435,62 @@
     </footer>
     <div id="modal-js-example" class="modal">
       <div class="modal-background"></div>
-    
       <div class="modal-content">
-        <div class="box">
-          <section class="hero is-success is-fullheight">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                        <h3 class="title has-text-black">Login</h3>
-                        <hr class="login-hr">
-                        <p class="subtitle has-text-black">Por favor, acredítese</p>
-                        <div class="box ">
-                            <figure class="avatar">
-                                <img src="https://via.placeholder.com/150">
-                            </figure>
-                            <form>
-                                <div class="field ">
-                                    <div class="control">
-                                        <input class="input is-large" type="email" placeholder="tu email" autofocus="">
-                                    </div>
-                                </div>
-    
-                                <div class="field">
-                                    <div class="control">
-                                        <input class="input is-large" type="password" placeholder="tu password">
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Recordar
-                                    </label>
-                                </div>
-                                <button class="button is-success is-info is-large is-fullwidth">Login <i class="fa fa-sign-in"
-                                        aria-hidden="true"></i></button>
-                            </form>
-                        <p class="has-text-grey">
-                            <a href="../">Crear cuenta</a> &nbsp;·&nbsp;
-                            <a href="../">He olvidado la contraseña</a> &nbsp;·&nbsp;
-                            <a href="../">¿Necesita ayuda?</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-    
-        </section>
-        </div>
-      </div>
+          <div class="box">
+              <section class="hero is-fullheight login">
+                  <div class="hero-body">
+                      <div class="container has-text-centered">
+                          <h3 class="title has-text-black">Login</h3>
+                          <hr class="login-hr">
+                          <div class="box ">
+                              <figure class="avatar">
+                                  <img src="https://via.placeholder.com/150">
+                              </figure>
+                              <form>
+                                  <div class="field">
+                                      <div class="control">
+                                          <input class="input is-small" type="email" placeholder="tu email" autofocus="">
+                                      </div>
+                                  </div>
+  
+                                  <div class="field">
+                                      <div class="control">
+                                          <input class="input is-small" type="password" placeholder="tu password">
+                                      </div>
+                                  </div>
+  
+                                  <div class="field">
+                                      <label class="checkbox">
+                                          <input type="checkbox" name="recordar"> Recordar sesión
+                                      </label>
+                                  </div>
+  
+                                  <div class="field">
+                                      <label class="label">Idioma:</label>
+                                      <div class="control">
+                                          <div class="select is-fullwidth">
+                                              <select>
+                                                  <option value="es">Español</option>
+                                                  <option value="en">Inglés</option>
+                                                  <!-- Agrega más opciones según sea necesario -->
+                                              </select>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <button class="button is-success is-info is-small is-fullwidth">Login <i
+                                          class="fa fa-sign-in" aria-hidden="true"></i></button>
+                              </form>
+                              <p class="has-text-grey">
+                                  <a href="../">He olvidado la contraseña</a> &nbsp;·&nbsp;
+                                  <a href="../">¿Necesita ayuda?</a>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+      </div> 
     
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
