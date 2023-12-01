@@ -29,13 +29,6 @@
   background-color: #e20a03;
   color: white; }
 
-.modal {
-  overflow-y: hidden; }
-
-.modal-content {
-  max-height: 100vh;
-  overflow-y: auto; }
-
 .avatar img {
   padding: 5px;
   background: #fff;

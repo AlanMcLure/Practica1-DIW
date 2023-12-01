@@ -52,15 +52,6 @@ $text-color: white;               // Color del texto blanco
     background-color: $primary-color;
     color: $text-color;
 }
-
-.modal {
-    overflow-y: hidden;  // Evita el desplazamiento vertical (scroll)
-}
-
-.modal-content {
-    max-height: 100vh;  // Establece la altura máxima del contenido al 100% de la altura visible
-    overflow-y: auto;   // Agrega desplazamiento vertical interno si es necesario
-}
   
 .avatar img {
     padding: 5px;
