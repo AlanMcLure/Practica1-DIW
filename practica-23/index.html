@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="registro/css/mystyles.css">
+    <title>Proyecto DIW</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="assets/logo.svg" alt="Logo" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <h1 class="title navbar-item has-text-black">
+            Catálogo de Videojuegos
+          </h1>
+        </div>
+
+        <div class="navbar-end">
+          <a href="index.html" class="navbar-item has-text-black">Inicio</a>
+          <a href="#acerca" class="navbar-item has-text-black">Acerca de</a>
+          <a href="#contacto" class="navbar-item has-text-black">Contacto</a>
+          <button
+            class="js-modal-trigger button is-danger"
+            data-target="modal-js-example"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel de promociones (No se mostrará en mobile) -->
+    <section class="section carrusel">
+      <div class="container is-hidden-mobile is-fullhd">
+        <h2 class="title is-4">Promociones</h2>
+        <div class="columns is-multiline">
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo.png" alt="Promo 1" />
+            </figure>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo2.png" alt="Promo 2" />
+            </figure>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo3.png" alt="Promo 3" />
+            </figure>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <figure class="image is-16by9">
+              <img src="assets/promo4.png" alt="Promo 4" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs para categorías de videojuegos -->
+    <div class="tabs is-centered">
+      <ul>
+        <li class="is-active"><a href="#accion">Acción</a></li>
+        <li><a href="#aventura">Aventura</a></li>
+        <li><a href="#rol">Rol</a></li>
+        <li><a href="#deporte">Deporte</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <!-- Cards de Videojuegos (3/4 de la pantalla) -->
+          <div class="column is-three-quarters">
+            <h2 class="title is-4">Videojuegos</h2>
+            <div class="columns is-multiline">
+              <!-- Código de una card de un videojuego concreto -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="assets/Grand_Theft_Auto_V.png"
+                        alt="Nombre del Videojuego"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">Grand Theft Auto V</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="assets/fc24.jpg" alt="Nombre del Videojuego" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">FC24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="assets/2k24.jpg" alt="Nombre del Videojuego" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">NBA 2k24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="assets/isaac.jpg" alt="Nombre del Videojuego" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">The Binding of Isaac</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="assets/Grand_Theft_Auto_V.png"
+                        alt="Nombre del Videojuego"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">Grand Theft Auto V</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="assets/fc24.jpg" alt="Nombre del Videojuego" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">FC24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="assets/2k24.jpg" alt="Nombre del Videojuego" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">NBA 2k24</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+              <div class="column is-4-tablet is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="assets/isaac.jpg" alt="Nombre del Videojuego" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <!-- Consola del juego -->
+                    <p class="subtitle is-6 has-text-primary">PS5</p>
+
+                    <!-- Nombre del Videojuego -->
+                    <p class="title is-4">The Binding of Isaac</p>
+
+                    <!-- Precio y botón de compra -->
+                    <div class="level">
+                      <!-- Precio en la esquina inferior izquierda -->
+                      <div class="level-left">
+                        <div class="price-tag">
+                          <p class="has-text-weight-bold">49.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Icono de compra en la esquina inferior derecha -->
+                      <div class="level-right">
+                        <div class="purchase-icon">
+                          <a href="detail.html">
+                            <i class="fas fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin (comienza la repetición) -->
+            </div>
+          </div>
+
+          <!-- Menú Lateral (1/4 de la pantalla, no se mostrará en mobile) -->
+          <div class="column is-hidden-mobile is-one-quarter">
+            <aside class="menu">
+              <p class="menu-label has-text-centered">Categorías</p>
+              <ul class="menu-list has-text-right">
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Móviles</a></li>
+                <li><a href="#">Electrónica</a></li>
+              </ul>
+              <p class="menu-label has-text-centered">Vender</p>
+              <ul class="menu-list has-text-right">
+                <li><a href="#">Quieres vender?</a></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Creado por Alan McLure Alarcón &copy; 2023</p>
+        <div class="social-icons">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Login -->
+    <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <section class="hero is-fullheight login">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <!-- Contenido del formulario de Login -->
+                <div id="login-section">
+                  <h3 class="title has-text-black">Login</h3>
+                  <hr class="login-hr" />
+                  <div class="box">
+                    <figure class="avatar">
+                      <img src="https://via.placeholder.com/150" />
+                    </figure>
+                    <form>
+                      <!-- Campos del formulario de Login -->
+                      <div class="field">
+                        <div class="control">
+                          <input
+                            class="input is-small"
+                            type="email"
+                            placeholder="tu email"
+                            autofocus=""
+                          />
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="control">
+                          <input
+                            class="input is-small"
+                            type="password"
+                            placeholder="tu password"
+                          />
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="checkbox">
+                          <input type="checkbox" name="recordar" /> Recordar sesión
+                        </label>
+                      </div>
+                      <div class="field">
+                        <label class="label">Idioma:</label>
+                        <div class="control">
+                          <div class="select is-fullwidth">
+                            <select>
+                              <option value="es">Español</option>
+                              <option value="en">Inglés</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Botón de Login -->
+                      <button class="button is-small is-fullwidth button-login">
+                        Login <i class="fa fa-sign-in" aria-hidden="true"></i>
+                      </button>
+                    </form>
+                    <!-- Enlaces adicionales para el formulario de Login -->
+                    <p class="has-text-grey">
+                      <a href="../">He olvidado la contraseña</a> &nbsp;·&nbsp;
+                      <a href="../">¿Necesita ayuda?</a>
+                    </p>
+                    <!-- Cambio a la sección de Registro -->
+                    <p class="has-text-grey">
+                      ¿No tienes una cuenta?
+                      <a href="#" onclick="toggleSection('register')">Regístrate aquí</a>
+                    </p>
+                  </div>
+                </div>
+                <!-- Contenido del formulario de Registro -->
+                <div id="register-section" style="display: none">
+                  <h3 class="title has-text-red">Registro</h3> <!-- Aplicando el color rojo personalizado -->
+                  <hr class="login-hr" />
+                  <div class="box">
+                    <!-- Campos del formulario de Registro -->
+                    <!-- Puedes agregar más campos según sea necesario -->
+                    <div class="field">
+                      <div class="control">
+                        <input
+                          class="input is-small"
+                          type="text"
+                          placeholder="Nombre"
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input
+                          class="input is-small"
+                          type="email"
+                          placeholder="Correo electrónico"
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="control">
+                        <input
+                          class="input is-small"
+                          type="password"
+                          placeholder="Contraseña"
+                        />
+                      </div>
+                    </div>
+                    <div class="field description">
+                      <label class="label">Descripción:</label>
+                      <div class="control">
+                        <textarea class="textarea is-small" placeholder="Añade una descripción"></textarea>
+                      </div>
+                    </div>
+                    <!-- Botón de Registro -->
+                    <button class="button is-small is-fullwidth button-register">
+                      Registro <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </button>
+                    <!-- Enlaces adicionales para el formulario de Registro -->
+                    <p class="has-text-grey">
+                      ¿Ya tienes una cuenta?
+                      <a href="#" class="is-link" onclick="toggleSection('login')">Inicia sesión</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- Script para el menú burger -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Functions to open and close a modal
+        function openModal($el) {
+          $el.classList.add("is-active");
+        }
+
+        function closeModal($el) {
+          $el.classList.remove("is-active");
+        }
+
+        function closeAllModals() {
+          (document.querySelectorAll(".modal") || []).forEach(($modal) => {
+            closeModal($modal);
+          });
+        }
+
+        // Add a click event on buttons to open a specific modal
+        (document.querySelectorAll(".js-modal-trigger") || []).forEach(
+          ($trigger) => {
+            const modal = $trigger.dataset.target;
+            const $target = document.getElementById(modal);
+
+            $trigger.addEventListener("click", () => {
+              openModal($target);
+            });
+          }
+        );
+
+        // Add a click event on various child elements to close the parent modal
+        (
+          document.querySelectorAll(
+            ".modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button"
+          ) || []
+        ).forEach(($close) => {
+          const $target = $close.closest(".modal");
+
+          $close.addEventListener("click", () => {
+            closeModal($target);
+          });
+        });
+
+        // Add a keyboard event to close all modals
+        document.addEventListener("keydown", (event) => {
+          if (event.code === "Escape") {
+            closeAllModals();
+          }
+        });
+      });
+
+      function toggleSection(section) {
+        if (section === "login") {
+          document.getElementById("login-section").style.display = "block";
+          document.getElementById("register-section").style.display = "none";
+        } else if (section === "register") {
+          document.getElementById("login-section").style.display = "none";
+          document.getElementById("register-section").style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #e20a03; }
+
+.card {
+  padding: 20px; }
+  .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease; }
+
+.card-image {
+  width: 100%;
+  height: auto; }
+  .card-image figure {
+    margin: 0; }
+
+.carrusel img {
+  border-radius: 10px; }
+
+.footer {
+  background-color: black;
+  color: white; }
+  .footer .social-icons a {
+    color: white; }
+
+.login {
+  background-color: #e20a03; }
+
+.button.is-small.is-fullwidth {
+  background-color: #e20a03;
+  color: white; }
+
+.avatar img {
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+
+/*# sourceMappingURL=styles.css.map */
